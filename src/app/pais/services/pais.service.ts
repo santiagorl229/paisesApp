@@ -14,6 +14,7 @@ export class PaisService {
   buscarPais(termino: string): Observable<any>{ 
     const url= `${this.apiUrl}/name/${termino}`;
     console.log(url);
+    console.log()
     return this.http.get(url);
   }
 }
