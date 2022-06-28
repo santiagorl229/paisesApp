@@ -13,7 +13,7 @@ export class PorPaisComponent {
   hayError: boolean= false;
   constructor(private paisService: PaisService) { }
 
-  buscar(){
+  buscar(){   
     this.hayError=false;
     this.paisService.buscarPais(this.termino).subscribe( (resp) => {      
     }, (err)=>{
